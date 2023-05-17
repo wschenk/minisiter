@@ -67,6 +67,7 @@ You can set the heading font inside of `views/layout.erb` using CSS variables.
 - `fly auth login` to authorize
 - `fly launch` to setup `fly.toml`
 - `fly deploy` to get it online
+- `fly wireguard reset` if you are having network errors
 
 ### Redis
 
