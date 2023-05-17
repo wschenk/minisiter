@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sleep 3
+
+echo This is my script
+echo You wrote:
+echo "$*"

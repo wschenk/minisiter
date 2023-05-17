@@ -1,0 +1,26 @@
+    <section>
+      <header>
+        <h1>Inline get example</h1>
+        <p>This will return immediately</p>
+      </header>
+
+      <aside>
+        <span class="htmx-indicator"> <img src="/bars.svg" /> Loading... </span>
+        <form
+          hx-get="/inline"
+          hx-target="#results"
+          hx-indicator=".htmx-indicator"
+          hx-push-url="true"
+        >
+          <label for="arg1">Arg 1:</label>
+          <input type="text" name="arg1" id="arg1""/>
+          <input type="submit" value="Run" />
+        </form>
+      </aside>
+    </section>
+
+    <main>
+      <article id="results">
+        <%= erb :results %>
+      </article>
+    </main>

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo This is my script
+echo You wrote:
+echo "$*"

@@ -1,0 +1,3 @@
+(cd /tmp && redis-server)&
+npm run dev &
+rerun --ignore 'views/*,index.css' "bundler exec rackup"
